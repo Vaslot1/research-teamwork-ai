@@ -1,0 +1,546 @@
+{
+  "selected_utc": "2026-09-22T21:43:06Z",
+  "catalog_snapshot": "study/models/catalog_raw.json",
+  "endpoints_snapshot": "study/models/endpoints_raw.json",
+  "policy": "study/models/selection_policy.json",
+  "verification_status": "found in catalog + official sources; NOT yet verified by generation (pilot = stage 04)",
+  "models": [
+    {
+      "family": "OpenAI",
+      "index": 1,
+      "model_id": "openai/gpt-6-sol",
+      "canonical_slug": "openai/gpt-6-sol",
+      "display_name": "OpenAI: GPT-6 Sol",
+      "catalog_created": "2026-09-22",
+      "endpoint": {
+        "provider_name": "OpenAI",
+        "tag": "openai",
+        "underlying_version": "openai/gpt-6-sol-20260922",
+        "quantization": "unknown",
+        "context_length": 1050000,
+        "max_completion_tokens": 128000,
+        "max_prompt_tokens": 922000,
+        "pricing_usd_per_token": {
+          "prompt": "0.000002",
+          "completion": "0.00001",
+          "input_cache_read": "0.0000002"
+        },
+        "endpoint_supported_parameters": [
+          "reasoning",
+          "include_reasoning",
+          "seed",
+          "max_tokens",
+          "response_format",
+          "structured_outputs",
+          "tools",
+          "tool_choice",
+          "reasoning_effort"
+        ],
+        "status": 0
+      },
+      "modalities": {
+        "in": [
+          "file",
+          "image",
+          "text"
+        ],
+        "out": [
+          "text"
+        ]
+      },
+      "model_supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "structured_outputs",
+        "tool_choice",
+        "tools"
+      ],
+      "all_endpoint_tags": [
+        "openai/flex",
+        "openai",
+        "amazon-bedrock/us-east-1",
+        "openai/fast"
+      ],
+      "developer": "OpenAI"
+    },
+    {
+      "family": "Anthropic",
+      "index": 2,
+      "model_id": "anthropic/claude-opus-5.5",
+      "canonical_slug": "anthropic/claude-opus-5.5",
+      "display_name": "Anthropic: Claude Opus 5.5",
+      "catalog_created": "2026-09-22",
+      "endpoint": {
+        "provider_name": "Anthropic",
+        "tag": "anthropic",
+        "underlying_version": "anthropic/claude-opus-5.5-20260921",
+        "quantization": "unknown",
+        "context_length": 1000000,
+        "max_completion_tokens": 128000,
+        "max_prompt_tokens": null,
+        "pricing_usd_per_token": {
+          "prompt": "0.000004",
+          "completion": "0.00002",
+          "input_cache_read": "0.0000002"
+        },
+        "endpoint_supported_parameters": [
+          "max_tokens",
+          "stop",
+          "reasoning",
+          "include_reasoning",
+          "tool_choice",
+          "tools",
+          "structured_outputs",
+          "response_format",
+          "verbosity",
+          "reasoning_effort"
+        ],
+        "status": 0
+      },
+      "modalities": {
+        "in": [
+          "text",
+          "image",
+          "file"
+        ],
+        "out": [
+          "text"
+        ]
+      },
+      "model_supported_parameters": [
+        "include_reasoning",
+        "max_completion_tokens",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "all_endpoint_tags": [
+        "amazon-bedrock",
+        "azure/global",
+        "google-vertex/global",
+        "claude-on-aws",
+        "anthropic",
+        "amazon-bedrock/eu-west-1",
+        "amazon-bedrock/us-east-1",
+        "azure/us",
+        "google-vertex/us",
+        "google-vertex/europe",
+        "anthropic/fast"
+      ],
+      "developer": "Anthropic"
+    },
+    {
+      "family": "Google",
+      "index": 3,
+      "model_id": "google/gemini-3.8-flash",
+      "canonical_slug": "google/gemini-3.8-flash",
+      "display_name": "Google: Gemini 3.8 Flash",
+      "catalog_created": "2026-09-02",
+      "endpoint": {
+        "provider_name": "Google AI Studio",
+        "tag": "google-ai-studio",
+        "underlying_version": "google/gemini-3.8-flash-20260902",
+        "quantization": "unknown",
+        "context_length": 1048576,
+        "max_completion_tokens": 65536,
+        "max_prompt_tokens": null,
+        "pricing_usd_per_token": {
+          "prompt": "0.00000075",
+          "completion": "0.00000375",
+          "input_cache_read": "0.000000075"
+        },
+        "endpoint_supported_parameters": [
+          "reasoning",
+          "include_reasoning",
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "seed",
+          "response_format",
+          "structured_outputs",
+          "tool_choice",
+          "tools",
+          "reasoning_effort"
+        ],
+        "status": 0
+      },
+      "modalities": {
+        "in": [
+          "text",
+          "image",
+          "video",
+          "file",
+          "audio"
+        ],
+        "out": [
+          "text"
+        ]
+      },
+      "model_supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "all_endpoint_tags": [
+        "google-ai-studio/flex",
+        "google-vertex/global/flex",
+        "google-ai-studio",
+        "google-vertex/global",
+        "google-ai-studio/priority",
+        "google-vertex/global/priority"
+      ],
+      "developer": "Google DeepMind"
+    },
+    {
+      "family": "Kimi",
+      "index": 4,
+      "model_id": "moonshotai/kimi-k3",
+      "canonical_slug": "moonshotai/kimi-k3",
+      "display_name": "MoonshotAI: Kimi K3",
+      "catalog_created": "2026-07-16",
+      "endpoint": {
+        "provider_name": "Moonshot AI",
+        "tag": "moonshotai/mxfp4",
+        "underlying_version": "moonshotai/kimi-k3-20260715",
+        "quantization": "mxfp4",
+        "context_length": 1048576,
+        "max_completion_tokens": 943718,
+        "max_prompt_tokens": null,
+        "pricing_usd_per_token": {
+          "prompt": "0.000003",
+          "completion": "0.000015",
+          "input_cache_read": "0.0000003"
+        },
+        "endpoint_supported_parameters": [
+          "reasoning",
+          "include_reasoning",
+          "max_tokens",
+          "stop",
+          "frequency_penalty",
+          "presence_penalty",
+          "structured_outputs",
+          "response_format",
+          "tool_choice",
+          "tools",
+          "reasoning_effort"
+        ],
+        "status": 0
+      },
+      "modalities": {
+        "in": [
+          "text",
+          "image",
+          "video"
+        ],
+        "out": [
+          "text"
+        ]
+      },
+      "model_supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "logprobs",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "all_endpoint_tags": [
+        "sail-research/fp4",
+        "inference-net/fp4",
+        "relace/fp4",
+        "phala",
+        "wafer",
+        "morph",
+        "makora",
+        "digitalocean",
+        "deepinfra/bf16",
+        "chutes/mxfp4",
+        "parasail/fp4",
+        "modal/mxfp4",
+        "together",
+        "fireworks",
+        "baseten/fp8",
+        "moonshotai/mxfp4",
+        "fireworks/us",
+        "alibaba",
+        "fireworks/fast",
+        "morph/fast"
+      ],
+      "developer": "Moonshot AI"
+    },
+    {
+      "family": "GLM",
+      "index": 5,
+      "model_id": "z-ai/glm-5.3-flashx",
+      "canonical_slug": "z-ai/glm-5.3-flashx",
+      "display_name": "Z.ai: GLM 5.3 FlashX",
+      "catalog_created": "2026-09-18",
+      "endpoint": {
+        "provider_name": "Z.AI",
+        "tag": "z-ai/fp8",
+        "underlying_version": "z-ai/glm-5.3-flashx-20260918",
+        "quantization": "fp8",
+        "context_length": 1048576,
+        "max_completion_tokens": 131072,
+        "max_prompt_tokens": null,
+        "pricing_usd_per_token": {
+          "prompt": "0.00000037",
+          "completion": "0.00000125",
+          "input_cache_read": "0.000000075"
+        },
+        "endpoint_supported_parameters": [
+          "reasoning",
+          "include_reasoning",
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "tools",
+          "tool_choice",
+          "top_k",
+          "response_format",
+          "reasoning_effort"
+        ],
+        "status": 0
+      },
+      "modalities": {
+        "in": [
+          "text",
+          "image",
+          "video"
+        ],
+        "out": [
+          "text"
+        ]
+      },
+      "model_supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "all_endpoint_tags": [
+        "z-ai/fp8"
+      ],
+      "developer": "Z.ai (Zhipu)"
+    },
+    {
+      "family": "DeepSeek",
+      "index": 6,
+      "model_id": "deepseek/deepseek-v4.1-flash",
+      "canonical_slug": "deepseek/deepseek-v4.1-flash",
+      "display_name": "DeepSeek: DeepSeek V4.1 Flash",
+      "catalog_created": "2026-09-10",
+      "endpoint": {
+        "provider_name": "Alibaba",
+        "tag": "alibaba",
+        "underlying_version": "deepseek/deepseek-v4.1-flash-20260910",
+        "quantization": "unknown",
+        "context_length": 1000000,
+        "max_completion_tokens": 393216,
+        "max_prompt_tokens": null,
+        "pricing_usd_per_token": {
+          "prompt": "0.00000015",
+          "completion": "0.0000006",
+          "input_cache_read": "0.000000003"
+        },
+        "endpoint_supported_parameters": [
+          "reasoning",
+          "include_reasoning",
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "seed",
+          "presence_penalty",
+          "response_format",
+          "top_k",
+          "frequency_penalty",
+          "stop",
+          "tools",
+          "tool_choice",
+          "reasoning_effort"
+        ],
+        "status": 0
+      },
+      "modalities": {
+        "in": [
+          "text",
+          "image"
+        ],
+        "out": [
+          "text"
+        ]
+      },
+      "model_supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "logprobs",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "all_endpoint_tags": [
+        "morph",
+        "relace/fp4",
+        "sail-research/fp4",
+        "deepinfra/fp8",
+        "streamlake/fp8",
+        "alibaba",
+        "deepseek",
+        "wafer",
+        "coreweave/fp8",
+        "open-inference/fp4",
+        "fireworks",
+        "phala",
+        "gmicloud/fp8",
+        "novita/fp8",
+        "atlas-cloud/fp8",
+        "baseten/fp8",
+        "makora",
+        "digitalocean",
+        "together",
+        "siliconflow/fp8",
+        "modal",
+        "baseten/fp8",
+        "parasail/fp8",
+        "venice/fp8"
+      ],
+      "developer": "DeepSeek",
+      "endpoint_original_tag": "deepseek",
+      "endpoint_change": {
+        "date_utc": "2026-09-22",
+        "reason": "direct deepseek endpoint rejected by account data policy: \"Paid model training violation\" (HTTP 404, pilot M6-PILOT-S0/S1)",
+        "from_tag": "deepseek",
+        "to_tag": "alibaba",
+        "note": "same weights deepseek-v4.1-flash-20260910 served by Alibaba; same price $0.15/$0.60; quantization field unknown at alibaba"
+      }
+    },
+    {
+      "family": "Qwen",
+      "index": 7,
+      "model_id": "qwen/qwen3.8-omni-flash",
+      "canonical_slug": "qwen/qwen3.8-omni-flash",
+      "display_name": "Qwen: Qwen3.8 Omni Flash",
+      "catalog_created": "2026-09-21",
+      "endpoint": {
+        "provider_name": "Alibaba",
+        "tag": "alibaba",
+        "underlying_version": "qwen/qwen3.8-omni-flash-20260918",
+        "quantization": "unknown",
+        "context_length": 1000000,
+        "max_completion_tokens": 131072,
+        "max_prompt_tokens": 983616,
+        "pricing_usd_per_token": {
+          "prompt": "0.00000015",
+          "completion": "0.00000047",
+          "input_cache_read": "0.000000016"
+        },
+        "endpoint_supported_parameters": [
+          "reasoning",
+          "include_reasoning",
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "seed",
+          "presence_penalty",
+          "response_format",
+          "tools",
+          "structured_outputs",
+          "top_k",
+          "frequency_penalty",
+          "stop",
+          "logprobs",
+          "top_logprobs",
+          "tool_choice"
+        ],
+        "status": 0
+      },
+      "modalities": {
+        "in": [
+          "text",
+          "image",
+          "audio",
+          "video"
+        ],
+        "out": [
+          "text"
+        ]
+      },
+      "model_supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "all_endpoint_tags": [
+        "alibaba"
+      ],
+      "developer": "Alibaba Qwen"
+    }
+  ]
+}

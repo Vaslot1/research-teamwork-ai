@@ -1,0 +1,48 @@
+family,model_id,catalog_created,decision,reason
+OpenAI,openai/gpt-6-sol,2026-09-22,SELECTED,Newest OpenAI general-purpose release (OpenAI announcement 2026-09-22); main full-size tier of the Sol/Luna pair; Astra is flagship but older release (catalog 2026-09-04).
+OpenAI,openai/gpt-6-sol-pro,2026-09-22,excluded,Same underlying model with reasoning.mode=pro serving config; not a separate size.
+OpenAI,openai/gpt-6-luna,2026-09-22,excluded,Compact high-volume tier of the same release; policy picks main full-size of simultaneous sizes.
+OpenAI,openai/gpt-6-luna-pro,2026-09-22,excluded,Compact tier + pro reasoning serving variant.
+OpenAI,openai/gpt-6-astra,2026-09-04,excluded,"Flagship tier but earlier release (catalog 2026-09-04, OpenAI early Sept 2026); 'newest' rule applies."
+OpenAI,openai/gpt-6-astra-pro,2026-09-04,excluded,Older release; pro serving variant.
+OpenAI,openai/gpt-5.6-sol,2026-07-09,excluded,Previous generation (2026-07-09).
+OpenAI,openai/gpt-chat-latest,2026-05-05,excluded,Floating alias; 'latest' aliases banned.
+OpenAI,openai/gpt-5.3-codex,2026-02-24,excluded,Coding-specialized line.
+OpenAI,openai/gpt-audio,2026-01-19,excluded,Audio-specialized.
+Anthropic,anthropic/claude-opus-5.5,2026-09-22,SELECTED,"Anthropic 'Latest' release 2026-09-22, first of Claude 5.5 family; official docs confirm model id claude-opus-5-5."
+Anthropic,anthropic/claude-fable-5.1,2026-09-01,excluded,Earlier release (catalog 2026-09-01).
+Anthropic,anthropic/claude-opus-5,2026-07-24,excluded,"2026-07-24, superseded by 5.5."
+Anthropic,anthropic/claude-sonnet-5,2026-06-30,excluded,"2026-06-30, older line."
+Anthropic,anthropic/claude-haiku-4.5,2025-10-15,excluded,"2025-10-15, older."
+Google,google/gemini-3.8-flash,2026-09-02,SELECTED,GA release 2026-09-02 (Google blog + model card); newest general Gemini; no 3.8 Pro in catalog. Flash = main general tier of 3.8 line.
+Google,google/gemini-3.7-flash,2026-08-13,excluded,"2026-08-13, superseded by 3.8."
+Google,google/gemini-3.6-flash,2026-07-21,excluded,"2026-07-21, older."
+Google,google/gemini-3.1-pro-preview,2026-02-19,excluded,"Preview, 2026-02-19, older than 3.8 Flash GA."
+Google,google/gemini-3.5-flash-lite,2026-07-21,excluded,"Lite compact tier, older."
+Google,google/gemini-3.1-flash-image,2026-06-18,excluded,Image-generation specialized (Nano Banana).
+Google,google/lyria-3-pro-preview,2026-03-30,excluded,Audio-specialized.
+Google,google/gemma-4-31b-it,2026-04-02,excluded,"Open-weight Gemma line, 2026-04-02, older."
+Kimi,moonshotai/kimi-k3,2026-07-16,SELECTED,"Moonshot release 2026-07-16 (official GitHub/HF repo, 'most capable model to date'); newest general Moonshot entry."
+Kimi,moonshotai/kimi-k2.7-code,2026-06-12,excluded,Coding-only specialized (2026-06-12).
+Kimi,moonshotai/kimi-k2.6,2026-04-20,excluded,"2026-04-20, older."
+Kimi,moonshotai/kimi-k2.5,2026-01-27,excluded,"2026-01-27, older."
+Kimi,moonshotai/kimi-k2-thinking,2025-11-06,excluded,"2025-11-06, older."
+GLM,z-ai/glm-5.3-flashx,2026-09-18,SELECTED,"Newest Z.ai release (2026-09-18). NOTE: serving tier of GLM-5.3-Flash (identical weights, ~200 tok/s), not new weights — recorded as limitation; still the newest available general multimodal entry."
+GLM,z-ai/glm-5.3-flash,2026-08-26,excluded,"2026-08-26; same weights as FlashX, earlier serving tier."
+GLM,z-ai/glm-5.3,2026-08-18,excluded,"2026-08-18; flagship text-only of 5.3 line, earlier than FlashX."
+GLM,z-ai/glm-5.2,2026-06-16,excluded,"2026-06-16, older."
+GLM,z-ai/glm-5v-turbo,2026-04-01,excluded,"2026-04-01, older."
+GLM,z-ai/glm-4.7-flash,2026-01-19,excluded,"2026-01-19, older."
+DeepSeek,deepseek/deepseek-v4.1-flash,2026-09-10,SELECTED,DeepSeek official release 2026-09-10; smallest of new CED family but V4.1-Pro not yet released; older V4 Flash/Pro retired or rerouted to V4.1-Flash upstream.
+DeepSeek,deepseek/deepseek-v4-pro-0813,2026-08-12,excluded,2026-08-12; upstream API routes v4-pro traffic to V4.1-Flash since 2026-09-14; deprecated path.
+DeepSeek,deepseek/deepseek-v4-flash-vision-exp,2026-08-21,excluded,"2026-08-21; retired upstream, name reroutes to V4.1-Flash."
+DeepSeek,deepseek/deepseek-v4-flash-0731,2026-07-31,excluded,2026-07-31; retired upstream.
+DeepSeek,deepseek/deepseek-v4-flash,2026-04-24,excluded,"2026-04-24; retired upstream, reroutes to V4.1-Flash."
+DeepSeek,deepseek/deepseek-v3.2,2025-12-01,excluded,"2025-12-01, older line."
+Qwen,qwen/qwen3.8-omni-flash,2026-09-21,SELECTED,Newest Qwen release (Alibaba docs updated 2026-09-17/18; catalog 2026-09-21). Omni-modal general model; text dialog works without media input.
+Qwen,qwen/qwen3.8-max-0902,2026-09-03,excluded,"2026-09-03, flagship snapshot but older."
+Qwen,qwen/qwen3.8-flash,2026-08-26,excluded,"2026-08-26, older."
+Qwen,qwen/qwen3.8-27b,2026-08-14,excluded,"2026-08-14, older."
+Qwen,qwen/qwen3.8-2.4t-a95b,2026-08-12,excluded,"2026-08-12, older."
+Qwen,qwen/qwen3.7-flash,2026-07-27,excluded,"2026-07-27, older."
+Qwen,qwen/qwen3-coder-plus,2025-09-23,excluded,Coding-specialized line.

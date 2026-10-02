@@ -1,0 +1,85 @@
+{
+  "ts": "2026-09-22T23:35:53Z",
+  "checks": [
+    {
+      "check": "frozen_hashes_match",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "check": "post_freeze_code_documented",
+      "ok": true,
+      "detail": "recorded=663a33369aad current=663a33369aad changed={'runner/cli.py': 'stage 05 pre-run: run-gate skips aggregate _code_snapshot pseudo-entry (per-file check)', 'runner/client.py': 'stage 05 mid-run: explicit retry for turn-2 embedded provider errors (4 Alibaba content-filter 502s); completed requests never rerun', 'runner/coding.py': 'stage 06 post-collection: iterative auto-coder fixes (negation inversion, case-insensitivity, adjective/participle disambiguation, recall patterns) verified by quote-level inspection', 'runner/analysis.py': 'stage 06: union of channel columns for CSV output'}"
+    },
+    {
+      "check": "schedule_168",
+      "ok": true,
+      "detail": 168
+    },
+    {
+      "check": "trials_done",
+      "ok": true,
+      "detail": "of 168"
+    },
+    {
+      "check": "trial_ids_unique",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "gens_ok_ge_planned",
+      "ok": true,
+      "detail": "340 vs planned 336 (extras = retries)"
+    },
+    {
+      "check": "done_trials_nonempty",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "check": "embedded_errors_documented",
+      "ok": true,
+      "detail": "4 records (Alibaba content-filter retries)"
+    },
+    {
+      "check": "every_response_registered",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "no_pilot_in_main_coding",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "coding_rows_eq_done",
+      "ok": true,
+      "detail": "168 vs 168"
+    },
+    {
+      "check": "7_models_coded",
+      "ok": true,
+      "detail": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6",
+        "M7"
+      ]
+    },
+    {
+      "check": "spend_within_cap",
+      "ok": true,
+      "detail": "$1.9026 <= $5.0"
+    }
+  ],
+  "status": "PASS",
+  "embedded_error_records": [
+    "M7-R1-CASE-S6-S0#t2",
+    "M7-R1-CASE-S4-P0#t2",
+    "M7-R1-CASE-S6-P0#t2",
+    "M7-R1-CASE-S2-P1#t2"
+  ]
+}

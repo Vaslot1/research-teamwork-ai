@@ -1,0 +1,135 @@
+{
+  "ts": "2026-09-22T22:15:39Z",
+  "result": {
+    "status": "finished",
+    "stop_reason": null,
+    "results": [
+      {
+        "trial_id": "M1-PILOT-S0",
+        "status": "skipped_done"
+      },
+      {
+        "trial_id": "M2-PILOT-S0",
+        "status": "skipped_done"
+      },
+      {
+        "trial_id": "M3-PILOT-S0",
+        "status": "skipped_done"
+      },
+      {
+        "trial_id": "M4-PILOT-S0",
+        "status": "skipped_done"
+      },
+      {
+        "trial_id": "M5-PILOT-S0",
+        "status": "skipped_done"
+      },
+      {
+        "trial_id": "M6-PILOT-S0",
+        "status": "done"
+      },
+      {
+        "trial_id": "M7-PILOT-S0",
+        "status": "skipped_done"
+      },
+      {
+        "trial_id": "M1-PILOT-S1",
+        "status": "skipped_done"
+      },
+      {
+        "trial_id": "M2-PILOT-S1",
+        "status": "skipped_done"
+      },
+      {
+        "trial_id": "M3-PILOT-S1",
+        "status": "skipped_done"
+      },
+      {
+        "trial_id": "M4-PILOT-S1",
+        "status": "skipped_done"
+      },
+      {
+        "trial_id": "M5-PILOT-S1",
+        "status": "skipped_done"
+      },
+      {
+        "trial_id": "M6-PILOT-S1",
+        "status": "done"
+      },
+      {
+        "trial_id": "M7-PILOT-S1",
+        "status": "skipped_done"
+      },
+      {
+        "trial_id": "M1-PILOT-P0",
+        "status": "skipped_done"
+      },
+      {
+        "trial_id": "M2-PILOT-P0",
+        "status": "skipped_done"
+      },
+      {
+        "trial_id": "M3-PILOT-P0",
+        "status": "skipped_done"
+      },
+      {
+        "trial_id": "M4-PILOT-P0",
+        "status": "skipped_done"
+      },
+      {
+        "trial_id": "M5-PILOT-P0",
+        "status": "skipped_done"
+      },
+      {
+        "trial_id": "M6-PILOT-P0",
+        "status": "done"
+      },
+      {
+        "trial_id": "M7-PILOT-P0",
+        "status": "skipped_done"
+      },
+      {
+        "trial_id": "M1-PILOT-P1",
+        "status": "skipped_done"
+      },
+      {
+        "trial_id": "M2-PILOT-P1",
+        "status": "skipped_done"
+      },
+      {
+        "trial_id": "M3-PILOT-P1",
+        "status": "skipped_done"
+      },
+      {
+        "trial_id": "M4-PILOT-P1",
+        "status": "skipped_done"
+      },
+      {
+        "trial_id": "M5-PILOT-P1",
+        "status": "skipped_done"
+      },
+      {
+        "trial_id": "M6-PILOT-P1",
+        "status": "done"
+      },
+      {
+        "trial_id": "M7-PILOT-P1",
+        "status": "skipped_done"
+      }
+    ],
+    "progress": {
+      "done": 28
+    }
+  },
+  "costs": {
+    "requests_with_cost": 56,
+    "total_usd": "0.25252603"
+  },
+  "ledger": {
+    "cap": "5",
+    "spent": "0.25252603",
+    "reserved": "0",
+    "uncertain": "0",
+    "available": "4.74747397"
+  }
+}

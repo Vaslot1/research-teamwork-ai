@@ -1,0 +1,156 @@
+{
+  "frozen_utc": "2026-09-22T22:23:03Z",
+  "basis": "measured pilot usage per model (56 generations)",
+  "cap_usd": "5",
+  "spent_so_far_usd": "0.25252603",
+  "remaining_usd": "4.74747397",
+  "main_plan": {
+    "trials": 168,
+    "generations": 336
+  },
+  "per_model": {
+    "OpenAI": {
+      "model_id": "openai/gpt-6-sol",
+      "endpoint_tag": "openai",
+      "pilot_generations": 8,
+      "pilot_prompt_tokens": 2992,
+      "pilot_completion_tokens": 1094,
+      "pilot_reasoning_tokens": 379,
+      "pilot_cost_usd": "0.016924",
+      "measured_cost_per_trial": "0.004231",
+      "expected": {
+        "main_usd": "0.1168"
+      },
+      "low": {
+        "main_usd": "0.1015"
+      },
+      "high": {
+        "main_usd": "0.3046"
+      }
+    },
+    "Anthropic": {
+      "model_id": "anthropic/claude-opus-5.5",
+      "endpoint_tag": "anthropic",
+      "pilot_generations": 8,
+      "pilot_prompt_tokens": 4831,
+      "pilot_completion_tokens": 2039,
+      "pilot_reasoning_tokens": 571,
+      "pilot_cost_usd": "0.060104",
+      "measured_cost_per_trial": "0.015026",
+      "expected": {
+        "main_usd": "0.4147"
+      },
+      "low": {
+        "main_usd": "0.3606"
+      },
+      "high": {
+        "main_usd": "1.0819"
+      }
+    },
+    "Google": {
+      "model_id": "google/gemini-3.8-flash",
+      "endpoint_tag": "google-ai-studio",
+      "pilot_generations": 8,
+      "pilot_prompt_tokens": 3083,
+      "pilot_completion_tokens": 7181,
+      "pilot_reasoning_tokens": 6245,
+      "pilot_cost_usd": "0.029241",
+      "measured_cost_per_trial": "0.007310",
+      "expected": {
+        "main_usd": "0.2018"
+      },
+      "low": {
+        "main_usd": "0.1754"
+      },
+      "high": {
+        "main_usd": "0.5263"
+      }
+    },
+    "Kimi": {
+      "model_id": "moonshotai/kimi-k3",
+      "endpoint_tag": "moonshotai/mxfp4",
+      "pilot_generations": 8,
+      "pilot_prompt_tokens": 5383,
+      "pilot_completion_tokens": 7430,
+      "pilot_reasoning_tokens": 5886,
+      "pilot_cost_usd": "0.122069",
+      "measured_cost_per_trial": "0.030517",
+      "expected": {
+        "main_usd": "0.8423"
+      },
+      "low": {
+        "main_usd": "0.7324"
+      },
+      "high": {
+        "main_usd": "2.1972"
+      }
+    },
+    "GLM": {
+      "model_id": "z-ai/glm-5.3-flashx",
+      "endpoint_tag": "z-ai/fp8",
+      "pilot_generations": 8,
+      "pilot_prompt_tokens": 3174,
+      "pilot_completion_tokens": 6446,
+      "pilot_reasoning_tokens": 5394,
+      "pilot_cost_usd": "0.008722",
+      "measured_cost_per_trial": "0.002181",
+      "expected": {
+        "main_usd": "0.0602"
+      },
+      "low": {
+        "main_usd": "0.0523"
+      },
+      "high": {
+        "main_usd": "0.1570"
+      }
+    },
+    "DeepSeek": {
+      "model_id": "deepseek/deepseek-v4.1-flash",
+      "endpoint_tag": "alibaba",
+      "pilot_generations": 8,
+      "pilot_prompt_tokens": 3505,
+      "pilot_completion_tokens": 15809,
+      "pilot_reasoning_tokens": 15065,
+      "pilot_cost_usd": "0.010011",
+      "measured_cost_per_trial": "0.002503",
+      "expected": {
+        "main_usd": "0.0691"
+      },
+      "low": {
+        "main_usd": "0.0601"
+      },
+      "high": {
+        "main_usd": "0.1802"
+      }
+    },
+    "Qwen": {
+      "model_id": "qwen/qwen3.8-omni-flash",
+      "endpoint_tag": "alibaba",
+      "pilot_generations": 8,
+      "pilot_prompt_tokens": 3453,
+      "pilot_completion_tokens": 10503,
+      "pilot_reasoning_tokens": 9725,
+      "pilot_cost_usd": "0.005454",
+      "measured_cost_per_trial": "0.001364",
+      "expected": {
+        "main_usd": "0.0376"
+      },
+      "low": {
+        "main_usd": "0.0327"
+      },
+      "high": {
+        "main_usd": "0.0982"
+      }
+    }
+  },
+  "totals": {
+    "low": "1.52",
+    "expected": "1.74",
+    "high": "4.55"
+  },
+  "fits_remaining": {
+    "low": true,
+    "expected": true,
+    "high": true
+  }
+}

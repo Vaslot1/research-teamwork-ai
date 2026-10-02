@@ -1,0 +1,61 @@
+{"request_id": "M1-PILOT-S0#t1", "n": 1, "ts": "2026-09-22T22:03:35.816Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M2-PILOT-S0#t1", "n": 1, "ts": "2026-09-22T22:03:35.839Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M1-PILOT-S0#t2", "n": 1, "ts": "2026-09-22T22:03:39.925Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M2-PILOT-S0#t2", "n": 1, "ts": "2026-09-22T22:03:40.400Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M3-PILOT-S0#t1", "n": 1, "ts": "2026-09-22T22:03:43.368Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M3-PILOT-S0#t2", "n": 1, "ts": "2026-09-22T22:03:46.824Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M5-PILOT-S0#t1", "n": 1, "ts": "2026-09-22T22:03:51.502Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M4-PILOT-S0#t1", "n": 1, "ts": "2026-09-22T22:03:45.768Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M5-PILOT-S0#t2", "n": 1, "ts": "2026-09-22T22:03:54.524Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M6-PILOT-S0#t1", "n": 1, "ts": "2026-09-22T22:04:02.533Z", "outcome": "http_4xx", "http_status": 404, "retry_after_s": null, "detail": "{\"error\": {\"message\": \"0 endpoints out of 1 requested are available matching your guardrail restrictions and data policy. We removed them for the following reasons (an endpoint may have matched multiple reasons):\\nPaid model training violation (account settings): 1 endpoint excluded; configurable at"}
+{"request_id": "M7-PILOT-S0#t1", "n": 1, "ts": "2026-09-22T22:04:03.066Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M4-PILOT-S0#t2", "n": 1, "ts": "2026-09-22T22:04:00.957Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M1-PILOT-S1#t1", "n": 1, "ts": "2026-09-22T22:04:30.841Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M1-PILOT-S1#t2", "n": 1, "ts": "2026-09-22T22:04:34.332Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M2-PILOT-S1#t1", "n": 1, "ts": "2026-09-22T22:04:38.074Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M2-PILOT-S1#t2", "n": 1, "ts": "2026-09-22T22:04:42.081Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M3-PILOT-S1#t1", "n": 1, "ts": "2026-09-22T22:04:48.014Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M7-PILOT-S0#t2", "n": 1, "ts": "2026-09-22T22:04:19.541Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M3-PILOT-S1#t2", "n": 1, "ts": "2026-09-22T22:04:52.169Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M5-PILOT-S1#t1", "n": 1, "ts": "2026-09-22T22:04:56.952Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M6-PILOT-S0#t1", "n": 1, "ts": "2026-09-22T22:09:46.808Z", "outcome": "http_4xx", "http_status": 404, "retry_after_s": null, "detail": "{\"error\": {\"message\": \"0 endpoints out of 1 requested are available matching your guardrail restrictions and data policy. We removed them for the following reasons (an endpoint may have matched multiple reasons):\\nPaid model training violation (account settings): 1 endpoint excluded; configurable at"}
+{"request_id": "M4-PILOT-S1#t1", "n": 1, "ts": "2026-09-22T22:09:46.796Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M5-PILOT-S1#t2", "n": 1, "ts": "2026-09-22T22:09:47.726Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M6-PILOT-S1#t1", "n": 1, "ts": "2026-09-22T22:09:58.151Z", "outcome": "http_4xx", "http_status": 404, "retry_after_s": null, "detail": "{\"error\": {\"message\": \"0 endpoints out of 1 requested are available matching your guardrail restrictions and data policy. We removed them for the following reasons (an endpoint may have matched multiple reasons):\\nPaid model training violation (account settings): 1 endpoint excluded; configurable at"}
+{"request_id": "M7-PILOT-S1#t1", "n": 1, "ts": "2026-09-22T22:09:58.701Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M4-PILOT-S1#t2", "n": 1, "ts": "2026-09-22T22:09:56.801Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M1-PILOT-P0#t1", "n": 1, "ts": "2026-09-22T22:10:23.187Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M1-PILOT-P0#t2", "n": 1, "ts": "2026-09-22T22:10:26.758Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M2-PILOT-P0#t1", "n": 1, "ts": "2026-09-22T22:10:31.199Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M2-PILOT-P0#t2", "n": 1, "ts": "2026-09-22T22:10:34.815Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M3-PILOT-P0#t1", "n": 1, "ts": "2026-09-22T22:10:40.781Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M3-PILOT-P0#t2", "n": 1, "ts": "2026-09-22T22:10:44.806Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M4-PILOT-P0#t1", "n": 1, "ts": "2026-09-22T22:10:51.886Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M7-PILOT-S1#t2", "n": 1, "ts": "2026-09-22T22:10:16.221Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M5-PILOT-P0#t1", "n": 1, "ts": "2026-09-22T22:11:00.160Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M5-PILOT-P0#t2", "n": 1, "ts": "2026-09-22T22:11:05.585Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M6-PILOT-P0#t1", "n": 1, "ts": "2026-09-22T22:11:20.501Z", "outcome": "http_4xx", "http_status": 404, "retry_after_s": null, "detail": "{\"error\": {\"message\": \"0 endpoints out of 1 requested are available matching your guardrail restrictions and data policy. We removed them for the following reasons (an endpoint may have matched multiple reasons):\\nPaid model training violation (account settings): 1 endpoint excluded; configurable at"}
+{"request_id": "M7-PILOT-P0#t1", "n": 1, "ts": "2026-09-22T22:11:21.085Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M4-PILOT-P0#t2", "n": 1, "ts": "2026-09-22T22:10:57.923Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M1-PILOT-P1#t1", "n": 1, "ts": "2026-09-22T22:11:36.023Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M1-PILOT-P1#t2", "n": 1, "ts": "2026-09-22T22:11:39.973Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M2-PILOT-P1#t1", "n": 1, "ts": "2026-09-22T22:11:44.851Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M2-PILOT-P1#t2", "n": 1, "ts": "2026-09-22T22:11:48.434Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M3-PILOT-P1#t1", "n": 1, "ts": "2026-09-22T22:11:55.717Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M3-PILOT-P1#t2", "n": 1, "ts": "2026-09-22T22:11:59.533Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M4-PILOT-P1#t1", "n": 1, "ts": "2026-09-22T22:12:07.783Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M7-PILOT-P0#t2", "n": 1, "ts": "2026-09-22T22:11:31.024Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M5-PILOT-P1#t1", "n": 1, "ts": "2026-09-22T22:12:25.881Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M5-PILOT-P1#t2", "n": 1, "ts": "2026-09-22T22:12:29.715Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M6-PILOT-P1#t1", "n": 1, "ts": "2026-09-22T22:12:38.950Z", "outcome": "http_4xx", "http_status": 404, "retry_after_s": null, "detail": "{\"error\": {\"message\": \"0 endpoints out of 1 requested are available matching your guardrail restrictions and data policy. We removed them for the following reasons (an endpoint may have matched multiple reasons):\\nPaid model training violation (account settings): 1 endpoint excluded; configurable at"}
+{"request_id": "M7-PILOT-P1#t1", "n": 1, "ts": "2026-09-22T22:12:39.459Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M4-PILOT-P1#t2", "n": 1, "ts": "2026-09-22T22:12:18.250Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M7-PILOT-P1#t2", "n": 1, "ts": "2026-09-22T22:12:52.359Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M6-PILOT-S0#t1", "n": 1, "ts": "2026-09-22T22:13:51.424Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M6-PILOT-S0#t2", "n": 1, "ts": "2026-09-22T22:13:54.349Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M6-PILOT-S1#t1", "n": 1, "ts": "2026-09-22T22:14:16.697Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M6-PILOT-S1#t2", "n": 1, "ts": "2026-09-22T22:14:20.513Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M6-PILOT-P0#t1", "n": 1, "ts": "2026-09-22T22:14:31.113Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M6-PILOT-P0#t2", "n": 1, "ts": "2026-09-22T22:14:33.488Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M6-PILOT-P1#t1", "n": 1, "ts": "2026-09-22T22:15:18.269Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}
+{"request_id": "M6-PILOT-P1#t2", "n": 1, "ts": "2026-09-22T22:15:21.272Z", "outcome": "ok", "http_status": 200, "retry_after_s": null, "detail": ""}

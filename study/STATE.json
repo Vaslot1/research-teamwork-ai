@@ -1,0 +1,168 @@
+{
+  "project": "llm_problem_reporting_social_context",
+  "workspace": "study/",
+  "package_root": "openrouter_experiment_agent/",
+  "protocol_version": "1.1-draft",
+  "design": {
+    "factors": "leader_reaction(S/P) x majority(0/1)",
+    "conditions": [
+      "S0",
+      "S1",
+      "P0",
+      "P1"
+    ],
+    "scenarios": [
+      "CASE-S1",
+      "CASE-S2",
+      "CASE-S3",
+      "CASE-S4",
+      "CASE-S5",
+      "CASE-S6"
+    ],
+    "repetitions": 1,
+    "turns_per_trial": 2,
+    "families": [
+      "OpenAI",
+      "Anthropic",
+      "Google",
+      "Kimi",
+      "GLM",
+      "DeepSeek",
+      "Qwen"
+    ],
+    "planned_main_trials": 168,
+    "planned_main_generations": 336,
+    "planned_pilot_trials": 28,
+    "planned_pilot_generations": 56,
+    "note": "repetitions reduced 3->1 on 2026-09-22 by user directive (budget <= $5); protocol-sanctioned variant DOCX-02 P0030"
+  },
+  "environment": {
+    "env_file": "F:\\Projects\\hse-online-team\\.env",
+    "OPENROUTER_API_KEY": "set (value never stored or printed)",
+    "ALLOW_PAID_RUN": "true",
+    "MAX_BUDGET_USD": "5",
+    "REPETITIONS": "1",
+    "MAX_CONCURRENCY": "2",
+    "ALLOW_INCOMPLETE_FAMILIES": "false",
+    "note": "key presence recorded as flag only; value never stored. Paid stages require all three set by user."
+  },
+  "models_draft": {
+    "status": "selected_not_frozen",
+    "verified": "in OpenRouter catalog + official sources as of 2026-09-22; generation check pending at stage 04",
+    "M1": "openai/gpt-6-sol -> endpoint openai",
+    "M2": "anthropic/claude-opus-5.5 -> endpoint anthropic",
+    "M3": "google/gemini-3.8-flash -> endpoint google-ai-studio",
+    "M4": "moonshotai/kimi-k3 -> endpoint moonshotai/mxfp4",
+    "M5": "z-ai/glm-5.3-flashx -> endpoint z-ai/fp8",
+    "M6": "deepseek/deepseek-v4.1-flash -> endpoint deepseek",
+    "M7": "qwen/qwen3.8-omni-flash -> endpoint alibaba"
+  },
+  "budget_warning": "reps=1: estimate low $2.57 / expected $6.03 / high $13.90 vs cap $5; expected exceeds cap only via reasoning assumption — pilot measures real usage; hard cap enforced by ledger",
+  "stages": {
+    "01": {
+      "status": "DONE",
+      "completed_utc": "2026-09-22T21:36:50Z",
+      "completed_europe_amsterdam": "2026-09-22T23:36:50+02:00",
+      "reason": "Stimuli extracted programmatically from DOCX-02 with all structural checks passing; protocol artifacts created.",
+      "checks": "study/protocol/extract_checks.json (all PASS: 6 first, 24 second, 4 conditions/scenario, block invariance, no condition leak in turn 1, markers balanced 6+6/24+24, modules A-D excluded)",
+      "outputs": {
+        "study/protocol/stimuli.json": "c4e37cfdc37c2a97694e1a13cf0ba3ea2bff5f68de7fcb4d26a61c4a5692e39d",
+        "study/protocol/codebook.json": "f33d7cb00ecc593f71c9934635d614ca6d44de40a49a9503bfe7e16e64ec7493",
+        "study/protocol/source_map.md": "a2f9ed7e7777eb10e253068302ddc71738a1c626bb124f43f00c1b918f4fa6ea",
+        "study/protocol/protocol_draft.md": "a74777c1eb6567d2cbbbe61edb995349ce19e354a0a2f8c17c579d3a667d4bc4",
+        "study/protocol/amendments.md": "0cb23cc04497e48a6fbcb99632ca24af4400df6b928a4f2b503aecb20874e215",
+        "study/models/user_candidate_table.md": "8e07eb232156c422a6f3f3f7388ed8f34bdb52974ce30f95e701d4cfe3bc688f",
+        "study/reports/stage_01.md": "00da7e20c4b5acef1e37533dab7b1b701585b30a2141dd11a3d428fbfa50ea8e"
+      },
+      "resume": "Re-run `python study/tools/stage01_extract.py && python study/tools/stage01_sourcemap.py` from package root to regenerate stimuli/source_map; deterministic except extracted_utc timestamp."
+    },
+    "02": {
+      "status": "DONE",
+      "completed_utc": "2026-09-22T21:47:49Z",
+      "completed_europe_amsterdam": "2026-09-22T23:47:49+02:00",
+      "reason": "Catalog + endpoints snapshots saved; 7 newest-per-family models selected per policy and confirmed by official sources; draft budget computed. Budget cap insufficient for full plan — flagged for user decision, pilot fits.",
+      "outputs": {
+        "study/models/selection_policy.json": "0ffa8665308faebd037188124fb635e1e5a18befe6fcdfba563266c339a74592",
+        "study/models/catalog_raw.json": "3fe1d038de4500bab3f265561f57d55de8720d3e5a96347009e3656a2e8e3bf7",
+        "study/models/endpoints_raw.json": "8d9db229860f1f43134fc5deeeb3751ab217035031221668c448e4239ce4a8ca",
+        "study/models/model_candidates.csv": "9861ec9629d70b53ebadfbc9138c1afbf64604e98c3ac469d4a966ff1e2c98f5",
+        "study/models/selected_models.json": "4c02132dfaa49c92961fe4414914547cd7bd71b6d5f60d5814fd1c90750c99bf",
+        "study/models/model_selection.md": "d8e3e89d2d8e06e075670cc52fade87159798c36f58233e1f26577b1c778fab0",
+        "study/budget/estimate_draft.json": "a26db23800ac58dd16f905f619e7be5972b8cd295610e3c6f55553ea7d932f78",
+        "study/reports/stage_02.md": "5e83290e0d99842c9d5eb9b05d796d94fe36540b999e38d7a7923aefb72c057b"
+      },
+      "resume": "Snapshots immutable; rerun stage02_registry.py + stage02_estimate.py to rebuild derived files."
+    },
+    "03": {
+      "status": "DONE",
+      "completed_utc": "2026-09-22T22:00:00Z",
+      "reason": "Runner implemented (validate/pilot/run/resume/annotate/analyze/report/status); 21 mock tests PASS; validate PASS; no paid calls.",
+      "outputs": {
+        "study/runner/": "package (10 modules)",
+        "study/run.py": "entry",
+        "study/tests/test_runner_mock.py": "21 tests",
+        "study/reports/stage_03.md": "f996d9323cd06a86d91e0c47ab3f4a7836d08dd4a31b8b71b70f88cab9043802"
+      },
+      "resume": "python -m pytest study/tests -q; python study/run.py validate"
+    },
+    "04": {
+      "status": "DONE",
+      "completed_utc": "2026-09-22T22:20:00Z",
+      "reason": "Pilot 28/28 done (56 gen, $0.2525). All checks pass. M6 endpoint deepseek->alibaba (account data-policy 404) documented. Frozen manifest written; main plan 168 trials (reps=1) estimate $1.52-4.55 fits remaining $4.75.",
+      "outputs": {
+        "study/data/pilot/": "requests/responses/attempts/progress/coding_auto",
+        "study/frozen/manifest.json": "13 files + code snapshot",
+        "study/schedules/schedule_main.json": "168 trials",
+        "study/budget/estimate_frozen.json": "actualized",
+        "study/reports/stage_04.md": "report"
+      },
+      "resume": "python study/run.py status"
+    },
+    "05": {
+      "status": "DONE",
+      "completed_utc": "2026-09-23T01:30:00Z",
+      "reason": "Budget gate GO (pilot spend $0.2525, remaining ~$4.75 >= estimate $1.52-4.55). Main collection complete: 168/168 trials, 336 planned + 4 documented M7 turn-2 retries (Alibaba content-filter 502s) = 340 response records, all registered. No rerun of completed requests.",
+      "outputs": {
+        "study/data/main/": "requests/responses/attempts/progress JSONL",
+        "study/reports/collection_summary.json": "trials_done 168, responses_ok 340",
+        "study/reports/stage_05.md": "report"
+      },
+      "resume": "python study/run.py resume (idempotent by trial_id+turn)"
+    },
+    "06": {
+      "status": "DONE",
+      "completed_utc": "2026-09-23T02:00:00Z",
+      "reason": "Auto-coding (auto_regex_v1) on 168/168 main trials after iterative false-positive/negative fixes verified by quote-level inspection; 168 blind rater packets + secret mapping + instructions; analysis JSON/CSV written. PROVISIONAL — no human raters.",
+      "outputs": {
+        "study/data/main/coding_auto.jsonl": "168 rows; B=1 x168, F=1 x166/0 x1/NA x1, G=1 x1, A: PUB85/PRIV82/NONE1, V=1 x167/0 x1, W=0",
+        "study/rater_packets/": "rater_packet.jsonl (168 blind), mapping_SECRET.json, rater_instructions_ru.md",
+        "study/analysis/": "analysis_main.json, coding_table_main.csv, by_model_condition_main.csv, contrasts_main.csv",
+        "study/reports/stage_06.md": "report"
+      },
+      "resume": "python -X utf8 study/tools/stage67_finish.py re-annotates + rebuilds analysis deterministically"
+    },
+    "07": {
+      "status": "DONE",
+      "completed_utc": "2026-09-23T02:20:00Z",
+      "reason": "Audit PASS (12/12 checks: frozen hashes, 168 schedule/done/coded, unique ids, gens>=planned, nonempty texts, embedded errors documented, no pilot leakage, 7 models, spend $1.9026 <= $5). Report RU + DOCX + talk insert + reproducibility.zip (97 files) produced. Status COMPLETE_PROVISIONAL.",
+      "outputs": {
+        "study/reports/report_ru.md": "full report",
+        "study/reports/report_ru.docx": "DOCX",
+        "study/reports/talk_insertion_ru.md": "talk insert",
+        "study/reports/audit.json": "PASS",
+        "study/reports/collection_summary.json": "summary",
+        "study/reproducibility.zip": "97 files",
+        "study/reports/stage_07.md": "report"
+      },
+      "resume": "python -X utf8 study/tools/stage67_finish.py"
+    }
+  },
+  "spent_usd": 1.90256294,
+  "extras": {
+    "study/site/": "presentation website (index.html + report_ru.docx + reproducibility.zip), real data from analysis_main.json, dark-theme infographics per user mockup; added 2026-09-23, not part of protocol stages"
+  },
+  "reserved_usd": 0,
+  "models_frozen": {
+    "M6_endpoint": "alibaba (was deepseek — account data-policy block)"
+  }
+}

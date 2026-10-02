@@ -1,0 +1,48 @@
+{
+ "frozen_utc": "2026-09-22T22:23:03Z",
+ "frozen_europe_amsterdam": "2026-09-22",
+ "repetitions": 1,
+ "main_trials": 168,
+ "main_generations": 336,
+ "files": {
+  "protocol/stimuli.json": "c4e37cfdc37c2a97694e1a13cf0ba3ea2bff5f68de7fcb4d26a61c4a5692e39d",
+  "protocol/codebook.json": "f33d7cb00ecc593f71c9934635d614ca6d44de40a49a9503bfe7e16e64ec7493",
+  "protocol/protocol_draft.md": "a74777c1eb6567d2cbbbe61edb995349ce19e354a0a2f8c17c579d3a667d4bc4",
+  "protocol/amendments.md": "afad8f2773a3c4304a04315a82f206109d55accbd72e7d90adbde9a41bda014b",
+  "protocol/source_map.md": "a2f9ed7e7777eb10e253068302ddc71738a1c626bb124f43f00c1b918f4fa6ea",
+  "models/selected_models.json": "1e6a4ae8b61d0d72c97d82a918ad82634af38160747713bdd1c7e2ee424a1b8b",
+  "models/generation_settings.json": "9af1f02e09af5d635a04cc479370673f0125fb6045809d02476cc39caf7c8978",
+  "models/model_selection.md": "d8e3e89d2d8e06e075670cc52fade87159798c36f58233e1f26577b1c778fab0",
+  "models/selection_policy.json": "0ffa8665308faebd037188124fb635e1e5a18befe6fcdfba563266c339a74592",
+  "budget/estimate_frozen.json": "e31820d7f1b18ae586d625bdfb87c66ac826570a0e2bba1967bd8965feb3949b",
+  "schedules/schedule_main.json": "85fe63c1ee5d3c644e6d0e9d72b049e485dbf38f20af7f5635d703f82280ced5",
+  "schedules/schedule_pilot.json": "2417b5d6163268af4974134958d854ae68cdcd6fb4353e8827747070e9c2d090",
+  "_code_snapshot": "ee7a18a97a768ecee0e27340067a5a4ffaa36e5621b0e66e501eccbcbe6d5e38"
+ },
+ "code_files": [
+  "__init__.py",
+  "analysis.py",
+  "budget.py",
+  "cli.py",
+  "client.py",
+  "coding.py",
+  "env.py",
+  "pipeline.py",
+  "schedule.py",
+  "storage.py",
+  "run.py"
+ ],
+ "python": "3.13.7",
+ "note": "pre-fixation manifest; main run must reproduce identical hashes",
+ "post_freeze": {
+  "code_snapshot_post": "663a33369aad6dfbd825ed3301d9975d44b06e30cb06bb31a81eed253ea82c33",
+  "recorded_utc": "2026-09-23T02:30:00Z",
+  "changed_files": {
+   "runner/cli.py": "stage 05 pre-run: run-gate skips aggregate _code_snapshot pseudo-entry (per-file check)",
+   "runner/client.py": "stage 05 mid-run: explicit retry for turn-2 embedded provider errors (4 Alibaba content-filter 502s); completed requests never rerun",
+   "runner/coding.py": "stage 06 post-collection: iterative auto-coder fixes (negation inversion, case-insensitivity, adjective/participle disambiguation, recall patterns) verified by quote-level inspection",
+   "runner/analysis.py": "stage 06: union of channel columns for CSV output"
+  },
+  "note": "stimuli/models/schedule/protocol files unchanged (frozen_hashes_match). Code changes post-date data collection decisions; coding rules do not alter raw responses."
+ }
+}

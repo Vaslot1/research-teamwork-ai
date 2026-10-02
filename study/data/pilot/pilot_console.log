@@ -1,0 +1,16 @@
+pilot: 28 trials / 56 generations
+{
+  "ts": "2026-09-22T22:13:28Z",
+  "costs": {
+    "requests_with_cost": 48,
+    "total_usd": "0.24251488"
+  },
+  "ledger": {
+    "cap": "5",
+    "spent": "0.24251488",
+    "reserved": "0",
+    "uncertain": "0",
+    "available": "4.75748512"
+  }
+}
+progress: {'done': 24, 'failed_turn1': 4}

@@ -1,0 +1,40 @@
+{
+  "checks": [
+    {
+      "check": "six_first_requests",
+      "ok": true,
+      "detail": "got 6"
+    },
+    {
+      "check": "twentyfour_second_requests",
+      "ok": true,
+      "detail": "got 24"
+    },
+    {
+      "check": "four_conditions_per_scenario",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "second_request_block_invariance",
+      "ok": true,
+      "detail": "5 blocks; only leader-history and majority clause vary; project draft constant per scenario"
+    },
+    {
+      "check": "first_request_no_condition_leak",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "no_errors_during_extraction",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "pilot_built_4_conditions",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "errors": []
+}

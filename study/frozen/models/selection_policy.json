@@ -1,0 +1,20 @@
+{
+  "policy": "latest_general_purpose",
+  "as_of": "execution date of stage 02 (2026-09-23 local)",
+  "families": ["OpenAI", "Anthropic", "Google", "Kimi", "GLM", "DeepSeek", "Qwen"],
+  "rules": [
+    "One newest available general-purpose model with working text chat per family.",
+    "Rank suitable releases by confirmed developer release date/order, not by OpenRouter `created` field alone.",
+    "If several sizes released simultaneously, pick the main full-size version.",
+    "Do not hide a newer compact general-purpose model to prefer an older flagship; reflect the distinction, apply the 'newest' rule.",
+    "Exclude: embedding, reranker, image/audio-only, coding-only, and anonymous router models.",
+    "Multimodal general-purpose models are acceptable if text dialog works without required images.",
+    "Preview/beta status is acceptable if it is the newest available suitable release; mark the status explicitly.",
+    "No selection by our test outcomes, popularity, or price.",
+    "Author namespace on OpenRouter is established from the catalog and official sources, not assumed from the family name.",
+    "Pick one fixed provider endpoint per model; prefer direct official provider when available, otherwise justify a compatible third-party endpoint. No auto/free/latest/fallback routing.",
+    "If a family has no suitable available model, record the gap; do not substitute another family and do not declare the sample complete. ALLOW_INCOMPLETE_FAMILIES=false applies."
+  ],
+  "user_candidate_table": "study/models/user_candidate_table.md — unverified input, must be confirmed or corrected against the live catalog",
+  "freeze": "selection becomes frozen only after stage-04 pilot; catalog metadata is not a subject response"
+}

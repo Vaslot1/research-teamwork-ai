@@ -1,0 +1,198 @@
+{
+  "assumptions": {
+    "REQ1": "350",
+    "REQ2": "500",
+    "VIS1": "200",
+    "VIS2": "350",
+    "reasoning_per_generation": {
+      "low": "400",
+      "expected": "1500",
+      "high": "4000"
+    },
+    "retry_factor": "1.10",
+    "note": "turn-2 input = turn-1 request + real turn-1 visible response + turn-2 request; reasoning billed once as completion tokens"
+  },
+  "per_model": {
+    "OpenAI": {
+      "model_id": "openai/gpt-6-sol",
+      "endpoint_tag": "openai",
+      "price_prompt_per_tok": "0.000002",
+      "price_completion_per_tok": "0.00001",
+      "low": {
+        "per_trial": "0.016300",
+        "pilot_usd": "0.0717",
+        "main_usd": "0.4303",
+        "total_usd": "0.5020"
+      },
+      "expected": {
+        "per_trial": "0.038300",
+        "pilot_usd": "0.1685",
+        "main_usd": "1.0111",
+        "total_usd": "1.1796"
+      },
+      "high": {
+        "per_trial": "0.088300",
+        "pilot_usd": "0.3885",
+        "main_usd": "2.3311",
+        "total_usd": "2.7196"
+      }
+    },
+    "Anthropic": {
+      "model_id": "anthropic/claude-opus-5.5",
+      "endpoint_tag": "anthropic",
+      "price_prompt_per_tok": "0.000004",
+      "price_completion_per_tok": "0.00002",
+      "low": {
+        "per_trial": "0.032600",
+        "pilot_usd": "0.1434",
+        "main_usd": "0.8606",
+        "total_usd": "1.0041"
+      },
+      "expected": {
+        "per_trial": "0.076600",
+        "pilot_usd": "0.3370",
+        "main_usd": "2.0222",
+        "total_usd": "2.3593"
+      },
+      "high": {
+        "per_trial": "0.176600",
+        "pilot_usd": "0.7770",
+        "main_usd": "4.6622",
+        "total_usd": "5.4393"
+      }
+    },
+    "Google": {
+      "model_id": "google/gemini-3.8-flash",
+      "endpoint_tag": "google-ai-studio",
+      "price_prompt_per_tok": "7.5E-7",
+      "price_completion_per_tok": "0.00000375",
+      "low": {
+        "per_trial": "0.006112",
+        "pilot_usd": "0.0269",
+        "main_usd": "0.1614",
+        "total_usd": "0.1883"
+      },
+      "expected": {
+        "per_trial": "0.014362",
+        "pilot_usd": "0.0632",
+        "main_usd": "0.3792",
+        "total_usd": "0.4424"
+      },
+      "high": {
+        "per_trial": "0.033112",
+        "pilot_usd": "0.1457",
+        "main_usd": "0.8742",
+        "total_usd": "1.0199"
+      }
+    },
+    "Kimi": {
+      "model_id": "moonshotai/kimi-k3",
+      "endpoint_tag": "moonshotai/mxfp4",
+      "price_prompt_per_tok": "0.000003",
+      "price_completion_per_tok": "0.000015",
+      "low": {
+        "per_trial": "0.024450",
+        "pilot_usd": "0.1076",
+        "main_usd": "0.6455",
+        "total_usd": "0.7531"
+      },
+      "expected": {
+        "per_trial": "0.057450",
+        "pilot_usd": "0.2528",
+        "main_usd": "1.5167",
+        "total_usd": "1.7695"
+      },
+      "high": {
+        "per_trial": "0.132450",
+        "pilot_usd": "0.5828",
+        "main_usd": "3.4967",
+        "total_usd": "4.0795"
+      }
+    },
+    "GLM": {
+      "model_id": "z-ai/glm-5.3-flashx",
+      "endpoint_tag": "z-ai/fp8",
+      "price_prompt_per_tok": "3.7E-7",
+      "price_completion_per_tok": "0.00000125",
+      "low": {
+        "per_trial": "0.002206",
+        "pilot_usd": "0.0097",
+        "main_usd": "0.0582",
+        "total_usd": "0.0679"
+      },
+      "expected": {
+        "per_trial": "0.004956",
+        "pilot_usd": "0.0218",
+        "main_usd": "0.1308",
+        "total_usd": "0.1526"
+      },
+      "high": {
+        "per_trial": "0.011206",
+        "pilot_usd": "0.0493",
+        "main_usd": "0.2958",
+        "total_usd": "0.3451"
+      }
+    },
+    "DeepSeek": {
+      "model_id": "deepseek/deepseek-v4.1-flash",
+      "endpoint_tag": "deepseek",
+      "price_prompt_per_tok": "1.5E-7",
+      "price_completion_per_tok": "6E-7",
+      "low": {
+        "per_trial": "0.001020",
+        "pilot_usd": "0.0045",
+        "main_usd": "0.0269",
+        "total_usd": "0.0314"
+      },
+      "expected": {
+        "per_trial": "0.002340",
+        "pilot_usd": "0.0103",
+        "main_usd": "0.0618",
+        "total_usd": "0.0721"
+      },
+      "high": {
+        "per_trial": "0.005340",
+        "pilot_usd": "0.0235",
+        "main_usd": "0.1410",
+        "total_usd": "0.1645"
+      }
+    },
+    "Qwen": {
+      "model_id": "qwen/qwen3.8-omni-flash",
+      "endpoint_tag": "alibaba",
+      "price_prompt_per_tok": "1.5E-7",
+      "price_completion_per_tok": "4.7E-7",
+      "low": {
+        "per_trial": "0.000844",
+        "pilot_usd": "0.0037",
+        "main_usd": "0.0223",
+        "total_usd": "0.0260"
+      },
+      "expected": {
+        "per_trial": "0.001878",
+        "pilot_usd": "0.0083",
+        "main_usd": "0.0496",
+        "total_usd": "0.0579"
+      },
+      "high": {
+        "per_trial": "0.004228",
+        "pilot_usd": "0.0186",
+        "main_usd": "0.1116",
+        "total_usd": "0.1302"
+      }
+    }
+  },
+  "totals": {
+    "low": "2.57",
+    "expected": "6.03",
+    "high": "13.90"
+  },
+  "budget_usd": "5",
+  "repetitions": 1,
+  "planned_main_generations": 336,
+  "fits_budget": {
+    "low": true,
+    "expected": false,
+    "high": false
+  }
+}

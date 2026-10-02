@@ -1,0 +1,60 @@
+{
+  "created_utc": "2026-09-22T22:05:00Z",
+  "policy": "prompts/03: temperature=0.7 where supported; else documented provider default; identical within each model across conditions",
+  "common": {
+    "max_tokens": 8192,
+    "usage_include": true,
+    "provider": {
+      "allow_fallbacks": false,
+      "require_parameters": true
+    },
+    "headers": {
+      "X-OpenRouter-Cache": "false"
+    },
+    "not_sent": "seed/top_p/reasoning — provider defaults; seeds never in prompts"
+  },
+  "per_model": {
+    "M1": {
+      "model_id": "openai/gpt-6-sol",
+      "endpoint_tag": "openai",
+      "temperature": null,
+      "temperature_mode": "provider default (param unsupported by endpoint)"
+    },
+    "M2": {
+      "model_id": "anthropic/claude-opus-5.5",
+      "endpoint_tag": "anthropic",
+      "temperature": null,
+      "temperature_mode": "provider default (param unsupported by endpoint)"
+    },
+    "M3": {
+      "model_id": "google/gemini-3.8-flash",
+      "endpoint_tag": "google-ai-studio",
+      "temperature": 0.7,
+      "temperature_mode": "explicit 0.7"
+    },
+    "M4": {
+      "model_id": "moonshotai/kimi-k3",
+      "endpoint_tag": "moonshotai/mxfp4",
+      "temperature": null,
+      "temperature_mode": "provider default (param unsupported by endpoint)"
+    },
+    "M5": {
+      "model_id": "z-ai/glm-5.3-flashx",
+      "endpoint_tag": "z-ai/fp8",
+      "temperature": 0.7,
+      "temperature_mode": "explicit 0.7"
+    },
+    "M6": {
+      "model_id": "deepseek/deepseek-v4.1-flash",
+      "endpoint_tag": "alibaba",
+      "temperature": 0.7,
+      "temperature_mode": "explicit 0.7"
+    },
+    "M7": {
+      "model_id": "qwen/qwen3.8-omni-flash",
+      "endpoint_tag": "alibaba",
+      "temperature": 0.7,
+      "temperature_mode": "explicit 0.7"
+    }
+  }
+}

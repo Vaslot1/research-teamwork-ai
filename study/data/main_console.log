@@ -1,0 +1,11 @@
+{
+  "status": "finished",
+  "stop": null,
+  "progress": {
+    "done": 168
+  },
+  "costs": {
+    "requests_with_cost": 336,
+    "total_usd": "1.64487161"
+  }
+}
